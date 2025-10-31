@@ -4,4 +4,5 @@ il faut quand même bien connaître la syntaxe, les bases des algorithmes et les
 comment sont organisés les fichiers dans le projet. Pour ce jeu, vous pouvez simplement le mettre sur votre propre serveur (serveur local) pour le modifier comme vous voulez et utiliser la touche espace pour jouer.
   
   
-  NB: Ce mini-jeu a été entièrement créé par Google Gemini. J'ai seulement travaillé sur l'organisation des fichiers (l'arborescence) et la personnalisation.
+  NB: Ce mini-jeu a été entièrement programmé par Google Gemini. J'ai seulement travaillé sur l'organisation des fichiers (l'arborescence) et la personnalisation.
+

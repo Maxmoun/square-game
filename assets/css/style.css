@@ -1,0 +1,80 @@
+/* Configuration de la police Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #e0f2f1; /* Light Teal background */
+}
+
+#game-container {
+    max-width: 900px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameCanvas {
+    background-color: #87CEEB; /* Ciel bleu */
+    border: 4px solid #333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    /* Rendre le canvas responsive */
+    width: 90%; 
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 2 / 1; /* Maintient le ratio 800x400 */
+}
+
+#ui-overlay {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#ui-overlay p {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1e3a8a; /* Dark Blue text */
+}
+
+#startButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    background-color: #059669; /* Emerald Green */
+    border: none;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: none; /* Caché initialement, JS le montrera */
+}
+
+#startButton:hover {
+    background-color: #047857;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour le mode mobile */
+@media (max-width: 640px) {
+    #ui-overlay {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    #startButton {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    #ui-overlay p {
+        font-size: 1rem;
+    }
+}
